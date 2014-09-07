@@ -3,7 +3,7 @@ using System.Collections;
 
 public class E_NoteEffectMovements : MonoBehaviour {
 
-	private static Vector3 startPosition = new Vector3(-4.21f, -2.18f, -2.0f);
+	private static Vector3 startPosition = new Vector3(-4.8745f, 1.36f, -1.1f);
 
 	private static float rotateSpeed = 200.0f;
 
