@@ -17,7 +17,7 @@ public class E_Shutter : MonoBehaviour {
 
 		// 0 : -3.6
 		// 10 : -0.51
-
+		//Debug.Log(E_GameParameters.HP);
 		// -3.09  -> -0.309
 		float level = (3.6f - 0.51f) / 10; //hp max hard coding
 		float height = level * E_GameParameters.HP;

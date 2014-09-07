@@ -113,8 +113,19 @@ public class InputManager : MonoBehaviour {
 		if( Input.touchCount > 1 )
 		{
 			ItemManager.GetInstance().UseItem();
+			return;
 		}
 
+		if(checkOnce)
+		{
+			if( Input.touchCount > 4 )
+			{
+				SoundManager.GetInstance().PlayBGM();
+				GameParameters.HP = 10;
+				checkOnce = false;
+				return;
+			}
+		}
 		Touch[] myTouches = Input.touches;
 		for(int i = 0; i < Input.touchCount; i++)
 		{
