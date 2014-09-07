@@ -243,10 +243,14 @@ public class NetworkManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (m_eventSink.IsConnected)
+		if( m_eventSink!= null)
 		{
-			m_client.FrameMove();
+			if (m_eventSink.IsConnected)
+			{
+				m_client.FrameMove();
+			}
 		}
+
 
 	}
 

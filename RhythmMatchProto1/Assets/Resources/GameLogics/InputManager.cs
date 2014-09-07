@@ -100,7 +100,71 @@ public class InputManager : MonoBehaviour {
 			}
 		}
 
+
+
+		///====================================================
+		TouchEvent();
+
 	}
 
+	private void TouchEvent()
+	{
+
+		if( Input.touchCount > 1 )
+		{
+			ItemManager.GetInstance().UseItem();
+		}
+
+		Touch[] myTouches = Input.touches;
+		for(int i = 0; i < Input.touchCount; i++)
+		{
+			
+			Touch touch = myTouches[i];
+			float positionY = touch.position.y;
+
+			if(positionY > (Screen.height / 2) )
+			{
+				if( !leftDown )
+				{
+					if ( touch.phase == TouchPhase.Began )
+					{
+						leftDown = true;
+						JudgeManager.GetInstance().JudgeLeft();
+						SoundManager.GetInstance().PlayLeftNote();
+					}
+				}
+				else
+				{
+					if ( touch.phase == TouchPhase.Ended )
+					{
+						leftDown = false;
+					}
+				}
+			}
+			else
+			{
+				if( !rightDown )
+				{
+					if ( touch.phase == TouchPhase.Began )
+					{
+						rightDown = true;
+						JudgeManager.GetInstance().JudgeRight();
+						SoundManager.GetInstance().PlayRightNote();
+					}
+				}
+				else
+				{
+					if ( touch.phase == TouchPhase.Ended )
+					{
+						rightDown = false;
+					}
+				}
+			}
+			
+			
+
+
+		}
+	}
 
 }

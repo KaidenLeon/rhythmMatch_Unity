@@ -15,5 +15,5 @@ public class GameParameters
 	public static int itemGauge = 0;
 	public static int combo = 0;
 
-	public static string serverIP = "192.168.1.11";
+	public static string serverIP = "192.168.1.12";
 }

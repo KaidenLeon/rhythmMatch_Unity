@@ -1,20 +1,27 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/ProudNet/Vars.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/EnemyLogics/E_NoteManager.cs">
     <Files>
-      <File FileName="Assets/Resources/GameLogics/NetworkManager.cs" Line="98" Column="4" />
-      <File FileName="Assets/Resources/ProudNet/Vars.cs" Line="61" Column="24" />
+      <File FileName="Assets/Resources/ProudNet/Vars.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/EnemyLogics/E_NoteManager.cs" Line="97" Column="12" />
+      <File FileName="Assets/Resources/EnemyLogics/E_NoteEffectMovements.cs" Line="26" Column="14" />
+      <File FileName="Assets/Resources/ProudNet/NetworkManager.cs" Line="385" Column="33" />
+      <File FileName="Assets/Resources/EnemyLogics/E_ItemManager.cs" Line="62" Column="4" />
+      <File FileName="Assets/Resources/EnemyLogics/E_Note.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/EnemyLogics/E_NoteMovements.cs" Line="64" Column="4" />
+      <File FileName="Assets/Resources/GameLogics/ItemManager.cs" Line="89" Column="38" />
+      <File FileName="Assets/Resources/EnemyLogics/E_JudgeManager.cs" Line="63" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Resources" expanded="True">
-              <Node name="EnemyLogics" expanded="True" />
-              <Node name="GameLogics" expanded="True" />
-              <Node name="ProudNet" expanded="True">
-                <Node name="Vars.cs" selected="True" />
+              <Node name="EnemyLogics" expanded="True">
+                <Node name="E_NoteManager.cs" selected="True" />
               </Node>
+              <Node name="GameLogics" expanded="True" />
+              <Node name="ProudNet" expanded="True" />
             </Node>
           </Node>
         </State>

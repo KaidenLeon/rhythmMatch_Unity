@@ -59,7 +59,7 @@ public class E_NoteMovements : MonoBehaviour {
 		Vector3 temp = transform.position;
 		temp.x = temp.x - ( noteSpeed * Time.deltaTime );
 		transform.position = temp;
-		Debug.Log(E_GameParameters.isNoteRotate);
+
 		if( E_GameParameters.isNoteRotate )
 		{
 			Vector3 r = new Vector3(0.0f,0.0f,( rotateSpeed * Time.deltaTime ));
