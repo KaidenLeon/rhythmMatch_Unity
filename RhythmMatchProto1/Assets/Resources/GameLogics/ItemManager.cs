@@ -87,5 +87,6 @@ public class ItemManager : MonoBehaviour {
 	public void Rotate(bool isON)
 	{
 		GameParameters.isNoteRotate = isON;
+		NetworkManager.GetInstance().SendItemResult(ItemType.ITEM_TYPE_ROTATE, true);
 	}
 }
