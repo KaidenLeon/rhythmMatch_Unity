@@ -160,6 +160,24 @@ public class NetworkManager : MonoBehaviour
 			Destroy (gameObject);
 		}
 
+
+		//===================================================================================
+
+
+		string requestURL = "http://desertrigs.meximas.com/RhythmMatch/server.php";
+		WWW w = new WWW(requestURL);
+		yield return w;
+
+		if(w.isDone && w.error == null)
+		{
+			GameParameters.serverIP = w.text;
+			Debug.Log("IP:" + GameParameters.serverIP);
+		}
+
+
+		//===================================================================================
+
+
 		m_client = new NetClient();
 		m_connectionParam = new NetConnectionParam();
 		

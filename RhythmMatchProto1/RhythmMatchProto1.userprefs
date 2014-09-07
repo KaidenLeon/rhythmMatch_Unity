@@ -1,25 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/EnemyLogics/E_Shutter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\ProudNet\NetworkManager.cs">
     <Files>
-      <File FileName="Assets/Resources/ProudNet/Vars.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/EnemyLogics/E_NoteManager.cs" Line="97" Column="12" />
-      <File FileName="Assets/Resources/EnemyLogics/E_NoteEffectMovements.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/ProudNet/NetworkManager.cs" Line="382" Column="38" />
-      <File FileName="Assets/Resources/EnemyLogics/E_ItemManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/EnemyLogics/E_Note.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/EnemyLogics/E_NoteMovements.cs" Line="62" Column="3" />
-      <File FileName="Assets/Resources/GameLogics/ItemManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/EnemyLogics/E_JudgeManager.cs" Line="67" Column="3" />
-      <File FileName="Assets/Resources/GameLogics/InputManager.cs" Line="116" Column="4" />
-      <File FileName="Assets/Resources/GameLogics/GameParameters.cs" Line="18" Column="47" />
-      <File FileName="Assets/Resources/EnemyLogics/E_Shutter.cs" Line="20" Column="5" />
+      <File FileName="Assets\Resources\EnemyLogics\E_JudgeManager.cs" Line="75" Column="1" />
+      <File FileName="Assets\Resources\GameLogics\InputManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\ProudNet\NetworkManager.cs" Line="166" Column="3" />
+      <File FileName="Assets\Resources\ProudNet\Vars.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\GameLogics\GameParameters.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\GameLogics\ItemManager.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

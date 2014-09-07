@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class InputManager : MonoBehaviour {
 
@@ -18,7 +19,7 @@ public class InputManager : MonoBehaviour {
 		if (_instance == null)
 		{
 			_instance = this;
-			GameParameters.myID = Random.Range(1, 1000000);
+			GameParameters.myID = UnityEngine.Random.Range(1, 1000000);
 		}		
 		else
 		{
@@ -109,23 +110,53 @@ public class InputManager : MonoBehaviour {
 
 	private void TouchEvent()
 	{
-
+		/*
 		if( Input.touchCount > 1 )
 		{
 			ItemManager.GetInstance().UseItem();
 			return;
 		}
 
+		Debug.Log ("111:"+checkOnce);
 		if(checkOnce)
 		{
+			Debug.Log ("222:"+Input.touchCount);
+
 			if( Input.touchCount > 4 )
 			{
+				Debug.Log ("333");
 				SoundManager.GetInstance().PlayBGM();
 				GameParameters.HP = 10;
 				checkOnce = false;
 				return;
 			}
 		}
+
+		*/
+		float acc = Input.acceleration.y * Input.acceleration.x * Input.acceleration.z;
+		acc = Math.Abs(acc);
+
+
+		if (SoundManager.GetInstance().GetPlayTime() < 0.2f)
+		{
+			if (acc > 2.0f)
+			{
+				SoundManager.GetInstance ().PlayBGM ();
+				GameParameters.HP = 10;
+				checkOnce = false;
+				return;
+			}
+		}
+		else
+		{
+			if (acc > 1.0f)
+			{
+				ItemManager.GetInstance().UseItem();
+			}
+
+		}
+
+
 		Touch[] myTouches = Input.touches;
 		for(int i = 0; i < Input.touchCount; i++)
 		{
