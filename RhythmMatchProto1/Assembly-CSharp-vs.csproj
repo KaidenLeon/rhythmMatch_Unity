@@ -89,7 +89,7 @@
      <None Include="Assets\Resources\Music\Sakuranbo_Hard\Sakuranbo_note_hard.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="Nettention.ProudNetClient">
- <HintPath>C:/Users/Administrator/Documents/GitHub/rhythmMatch_Unity/RhythmMatchProto1/Assets/Resources/ProudNet/Nettention.ProudNetClient.dll</HintPath>
+ <HintPath>C:/Users/Administrator/Documents/GitHub/rhythmMatch/rhythmMatch_Unity/RhythmMatchProto1/Assets/Resources/ProudNet/Nettention.ProudNetClient.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
